@@ -63,7 +63,7 @@
               target="_blank">
               View my resume (FR)
             </v-btn>
-            <v-btn class="mr-2" to="https://github.com/sponsors/Armaldio" color="blue" rounded>
+            <v-btn class="mr-2" href="https://github.com/sponsors/Armaldio" color="blue" rounded>
               Support me
               <v-icon small right dark>fas fa-money-bill</v-icon>
             </v-btn>
