@@ -2,8 +2,8 @@
   <main class="main">
     <div class="main-body">
       <div class="hero">
-        <div class="hero-right">
-          <svg
+        <!-- <div class="hero-right"> -->
+        <!-- <svg
             class="image-blob blob1"
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
@@ -24,10 +24,10 @@
               d="M59.2,-57.4C75.8,-42.7,87.6,-21.3,87.8,0.2C88,21.7,76.6,43.5,60,59.2C43.5,74.9,21.7,84.5,0.5,84C-20.7,83.4,-41.3,72.7,-54.6,57C-67.9,41.3,-73.9,20.7,-71.3,2.6C-68.8,-15.5,-57.7,-31.1,-44.4,-45.9C-31.1,-60.6,-15.5,-74.6,2.9,-77.5C21.3,-80.4,42.7,-72.2,59.2,-57.4Z"
               transform="translate(100 100)"
             />
-          </svg>
+          </svg> -->
 
-          <img class="profile-picture" src="/profile.png" />
-        </div>
+        <!-- <img class="profile-picture" src="/profile.png" /> -->
+        <!-- </div> -->
         <div class="hero-left">
           <div class="hero-body">
             <h1 class="title hero-title">
@@ -57,19 +57,19 @@
             </div>
           </div>
         </div>
-        <div class="shape-divider">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
+      </div>
+      <div class="shape-divider">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
       <div class="cv">
         <div class="cv-btn">
@@ -78,65 +78,114 @@
         </div>
       </div>
       <div class="intro">
-        <div class="header">A propos de moi</div>
-        <p class="about-me">
-          Passionné d'informatique depuis mon plus jeune âge, j'ai d'abord
-          exploré la <span class="tooltip">création de petits jeux</span>, avant
-          de plonger dans le <span class="tooltip">JavaScript</span> et le
-          développement web avec des frameworks comme
-          <span class="tooltip">VueJS</span>. Mon parcours m'a aussi mené vers
-          le <span class="tooltip">backend</span>, et je développe aujourd'hui
-          un intérêt croissant pour l'expérience utilisateur et
-          <span class="tooltip">le développement mobile</span>. Curieux et
-          créatif, je conçois régulièrement des outils pour répondre à mes
-          propres besoins ou simplement pour expérimenter de nouvelles
-          technologies. Chaque projet devient une occasion d'apprentissage que
-          je partage avec
-          <span class="tooltip">la communauté open source</span>, convaincu que
-          le savoir doit circuler pour se renforcer. Engagé dans une veille
-          technologique constante, je reste attentif aux tendances et
-          innovations pour anticiper les évolutions du secteur et enrichir mes
-          compétences.
-        </p>
+        <div class="intro-wrapper">
+          <div class="header">A propos de moi</div>
+          <p class="about-me">
+            Passionné d'informatique depuis mon plus jeune âge, j'ai d'abord
+            exploré la
+            <span class="tooltip">création de petits jeux</span>, avant de
+            plonger dans le <span class="tooltip">JavaScript</span> et le
+            développement web avec des frameworks comme
+            <span class="tooltip">VueJS</span>.
+            <br />
+            Mon parcours m'a aussi mené vers le
+            <span class="tooltip">backend</span>, et je développe aujourd'hui un
+            intérêt croissant pour l'expérience utilisateur et
+            <span class="tooltip">le développement mobile</span>.
+            <br />
+            Curieux et créatif, je conçois régulièrement des outils pour
+            répondre à mes propres besoins ou simplement pour expérimenter de
+            nouvelles technologies. Chaque projet devient une occasion
+            d'apprentissage que je partage avec
+            <span class="tooltip">la communauté open source</span>, convaincu
+            que le savoir doit circuler pour se renforcer.
+            <br />
+            Engagé dans une veille technologique constante, je reste attentif
+            aux tendances et innovations pour anticiper les évolutions du
+            secteur et enrichir mes compétences.
+          </p>
+        </div>
       </div>
       <div class="projects">
-        <div class="header">Mes projets</div>
+        <div class="projects-wrapper">
+          <!-- <div class="header">Mes projets</div> -->
+          <div class="projects-body">
+            <Project
+              class="project project-pipelab"
+              :icon="CibNpm"
+              title="Pipelab"
+              active
+              description="Un outil d'automatisation à destination des développeurs de jeux vidéo"
+              link="https://pipelab.app"
+            >
+              <template #icon>
+                <img
+                  src="https://avatars.githubusercontent.com/u/176024061?s=48&v=4"
+                />
+              </template>
+            </Project>
 
-        <div class="projects-body">
-          <Project
-            :icon="CibNpm"
-            title="Modules node.js"
-            description="L'ensemble des modules node.js que j'ai créés"
-            link="https://www.npmjs.com/~armaldio"
-          ></Project>
+            <Project
+              class="project project-pipelab"
+              :icon="CibNpm"
+              title="Modules Node.js"
+              description="L'ensemble des modules node.js que j'ai créés"
+              link="https://www.npmjs.com/~armaldio"
+            ></Project>
 
-          <Project
-            :icon="CibNpm"
-            title="Armaldio"
-            description="Un site web personnel"
-            link="https://armaldio.xyz"
-          ></Project>
+            <Project
+              class="project project-pipelab"
+              title="Greenworks Prebuilds"
+              description="Un site pour télécharger des builds automatisés de Greenworks"
+              link="https://greenworks-prebuilds.armaldio.xyz/"
+            >
+              <template #icon>
+                <img
+                  height="48"
+                  src="https://greenworks-prebuilds.armaldio.xyz/assets/home-c45b0c47.png"
+                />
+              </template>
+            </Project>
 
-          <Project
-            :icon="CibNpm"
-            title="Armaldio-cli"
-            description="Un utilitaire de gestion de projet"
-            link="https://github.com/armaldio/armaldio-cli"
-          ></Project>
+            <Project
+              class="project project-pipelab"
+              :icon="CibDiscord"
+              title="Discord Construct Community"
+              description="Une communauté Discord pour les utilisateurs du moteur de jeux 'Construct'"
+              link="https://discord.gg/dZDU7Re"
+            ></Project>
 
-          <Project
-            :icon="CibNpm"
-            title="Armaldio-theme"
-            description="Un thème pour Armaldio"
-            link="https://github.com/armaldio/armaldio-theme"
-          ></Project>
+            <Project
+              class="project project-pipelab"
+              :icon="CibNpm"
+              title="Awesome Construct"
+              description="Une liste awesome à props de Construct"
+              link="https://github.com/ConstructCommunity/awesome-construct"
+            >
+              <template #icon>
+                <img
+                  height="48"
+                  src="https://raw.githubusercontent.com/sindresorhus/awesome/main/media/logo.svg"
+                />
+              </template>
+            </Project>
+
+            <Project
+              class="project project-pipelab"
+              :icon="CibGithub"
+              title="Github"
+              description="Retrouvez tous mes projets sur Github"
+              link="https://pipelab.app"
+            ></Project>
+          </div>
         </div>
       </div>
 
       <div class="journey">
-        <div class="header">Mon parcours</div>
-
-        <Timeline :items="timeline"></Timeline>
+        <div class="journey-wrapper">
+          <div class="header">Mon parcours</div>
+          <Timeline :items="timeline"></Timeline>
+        </div>
       </div>
 
       <div class="contact">
@@ -151,6 +200,8 @@ import CibVueJs from '~icons/cib/vue-js'
 import CibTypescript from '~icons/cib/typescript'
 import CibElectron from '~icons/cib/electron'
 import CibNpm from '~icons/cib/npm'
+import CibGithub from '~icons/cib/github'
+import CibDiscord from '~icons/cib/discord'
 
 import MaterialSymbolsPictureAsPdf from '~icons/material-symbols/picture-as-pdf'
 
@@ -244,6 +295,21 @@ Intégration avec Meteor.js et Vue.`,
 
 <style scoped>
 .main {
+  /* --main-bg-color: #f0f0f0; */
+  /* --main-bg-color: rgba(167, 199, 231); */
+  /* --main-bg-color: #5900ff; */
+  /* --main-bg-color: rgb(104, 88, 232); */
+
+  /* --main-bg-color: rgb(0, 0, 0, 0.05); */
+  --main-bg-color: #9ad1d4;
+  --main-text-color: #000;
+
+  --btn-hover-color: #0011ff38;
+  --btn-hover-box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 1);
+  --btn-hover-transform: translateY(-0.25em);
+}
+
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,8 +319,7 @@ Intégration avec Meteor.js et Vue.`,
   .main-body {
     display: flex;
     flex-direction: column;
-    gap: 64px;
-    max-width: 60%;
+    /* gap: 64px; */
   }
 }
 
@@ -262,6 +327,8 @@ Intégration avec Meteor.js et Vue.`,
   display: flex;
   flex-direction: row;
   height: 80vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-left {
@@ -269,6 +336,8 @@ Intégration avec Meteor.js et Vue.`,
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 60%;
 }
 
 .logos {
@@ -276,6 +345,7 @@ Intégration avec Meteor.js et Vue.`,
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+  margin-top: 32px;
 
   .logo {
     display: flex;
@@ -308,9 +378,78 @@ Intégration avec Meteor.js et Vue.`,
   font-size: 1.4rem;
 }
 
+.intro {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  padding-top: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .intro-wrapper {
+    width: 60%;
+    /* border: 1px solid var(--main-text-color); */
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+
+    .about-me {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.projects {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+
+  padding-top: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .projects-wrapper {
+    width: 80%;
+    /* border: 1px solid var(--main-text-color); */
+    padding: 1rem;
+    border-radius: 1rem;
+    /* background-color: #fff; */
+  }
+}
+
+.project {
+  color: var(--main-text-color);
+  background-color: #fff;
+  height: 204px;
+  width: 400px;
+}
+
+.journey {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+
+  padding-top: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .journey-wrapper {
+    width: 80%;
+    /* border: 1px solid var(--main-text-color); */
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+  }
+}
+
 .cv {
-  margin-top: 128px;
-  background-color: rgb(30, 30, 255);
+  color: var(--main-text-color);
+  padding-top: 128px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
 }
 
 .cv-btn {
@@ -319,24 +458,27 @@ Intégration avec Meteor.js et Vue.`,
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  border: 1px solid #000000;
   padding: 1rem;
   border-radius: 0.5rem;
   font-size: 1.2rem;
-  color: #000;
+  color: var(--main-text-color);
+  background: white;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  width: 50%;
+  text-align: center;
 
   a {
-    color: #000;
+    color: var(--main-text-color);
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
 
   &:hover {
-    background-color: #0011ff38;
+    background-color: var(--btn-hover-color);
+    box-shadow: var(--btn-hover-box-shadow);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     text-decoration: none;
@@ -382,6 +524,7 @@ Intégration avec Meteor.js et Vue.`,
 .hero-subtitle {
   font-size: 3rem;
   margin-top: 16px;
+  margin-bottom: 0;
 }
 
 .image-blob {
@@ -404,45 +547,6 @@ Intégration avec Meteor.js et Vue.`,
   top: 100px;
 }
 
-/* Responsive */
-@media screen and (max-width: 1024px) {
-  .main .main-body {
-    max-width: 80%;
-  }
-
-  .main .main-body .hero {
-    flex-direction: column;
-  }
-
-  .main .main-body .hero-right {
-    display: none;
-  }
-
-  .logos {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .main .main-body {
-    max-width: 90%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .main .main-body {
-    max-width: 100%;
-  }
-}
-
-.about-me:hover {
-  .tooltip {
-    outline: 1px solid #5900ff;
-    background: #1900ff31;
-    transition: all 0.2s ease-in-out;
-  }
-}
-
 .projects-body {
   display: flex;
   flex-direction: row;
@@ -459,9 +563,18 @@ Intégration avec Meteor.js et Vue.`,
 }
 
 .profile-picture {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  top: 0;
+  right: 0;
+  width: 100%;
   height: 600px;
   transform: perspective();
   z-index: 1;
+  border-radius: 50%;
+
+  object-fit: cover;
 }
 
 .header {
@@ -471,23 +584,141 @@ Intégration avec Meteor.js et Vue.`,
 }
 
 .shape-divider {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  /* transform: rotate(180deg); */
+  background-color: var(--main-bg-color);
 }
 
 .shape-divider svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 82px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 82px;
 }
 
 .shape-divider .shape-fill {
-    fill: #FFFFFF;
+  fill: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 1280px) {
+  .projects .projects-wrapper {
+    width: 100%;
+  }
+
+  .journey .journey-wrapper {
+    width: 100%;
+  }
+
+  .project {
+    width: 45%;
+  }
+
+  .intro .intro-wrapper {
+    width: 80%;
+  }
+
+  .hero-left {
+    width: 90%;
+  }
+
+  .hero-icons {
+    font-size: 1.5em;
+  }
+
+  .hero-description {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* .main .main-body {
+    max-width: 80%;
+  } */
+
+  .main .main-body .hero {
+    flex-direction: column;
+  }
+
+  .main .main-body .hero-right {
+    display: none;
+  }
+
+  .hero-icons {
+    font-size: 1em;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .project {
+    width: 80%;
+  }
+
+  .intro .intro-wrapper {
+    width: 100%;
+    border-radius: 0;
+
+    .header {
+      padding: 0 16px;
+    }
+
+    .about-me {
+      padding: 0 16px;
+      font-size: 1.1rem;
+    }
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 2rem;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* .main .main-body {
+    max-width: 90%;
+  } */
+  .project {
+    width: 90%;
+  }
+
+  .logos {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* .main .main-body {
+    max-width: 100%;
+  } */
 }
 </style>

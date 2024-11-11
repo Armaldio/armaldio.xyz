@@ -20,6 +20,9 @@
             <tspan class="company">Lycée Frédéric Fays</tspan>
             - Villeurbanne
           </text>
+          <text x="0" y="-12" text-anchor="end" dx="-4" class="company">
+            <tspan class="company">Sept 2013 - Juin 2015</tspan>
+          </text>
         </g>
 
         <!-- Diplôme d'expert en technologie de l'information -->
@@ -32,6 +35,9 @@
           <text x="0" y="-42" text-anchor="end" dx="-4" class="company">
             <tspan class="company">Epitech</tspan>
             - Lyon
+          </text>
+          <text x="0" y="-38" text-anchor="end" dx="-4" class="company">
+            <tspan class="company">Sept 2015 - Août 2020</tspan>
           </text>
         </g>
 
@@ -53,6 +59,7 @@
               <div class="location">- Rimouski, Canada</div>
             </foreignObject>
           </g>
+          Sept 2018 - Juil 2019
           <!-- <text x="20" y="-35" text-anchor="start" dx="4" class="title">
             <tspan>Diplôme</tspan> <tspan dx="4" x="20" y="-31">en Majeur Informatique</tspan>
           </text> -->
@@ -72,6 +79,9 @@
             <tspan class="company">Direct Nature</tspan>
             - Décines-Charpieu
           </text>
+          <text x="0" y="-62" text-anchor="end" dx="-4" class="company">
+            <tspan class="company">Juil 2016 - Dec 2016</tspan>
+          </text>
         </g>
 
         <!-- Développeur Fullstack -->
@@ -83,6 +93,9 @@
           <text x="0" y="-86" text-anchor="end" dx="-4" class="company">
             <tspan class="company">Indy</tspan>
             - Lyon
+          </text>
+          <text x="0" y="-82" text-anchor="end" dx="-4" class="company">
+            <tspan class="company">Avr 2018 - Août 2018</tspan>
           </text>
         </g>
 
@@ -96,6 +109,9 @@
             <tspan class="company">BeCAMe</tspan>
             - Lyon
           </text>
+          <text x="0" y="-102" text-anchor="end" dx="-4" class="company">
+            <tspan class="company">Sept 2017 - Oct 2020</tspan>
+          </text>
         </g>
 
         <!-- Développeur Front End -->
@@ -108,6 +124,9 @@
             <tspan class="company">Knitiv</tspan>
             - Lyon
           </text>
+          <text x="0" y="-122" text-anchor="end" dx="-4" class="company">
+            <tspan class="company">Oct 2019 - Aujourd'hui</tspan>
+          </text>
         </g>
 
         <!-- Freelance / Open Source -->
@@ -118,7 +137,7 @@
           </text>
           <text x="20" y="-126" text-anchor="start" dx="4" class="company">
             <tspan class="company"></tspan>
-            -
+            Aujourd'hui
           </text>
         </g>
       </svg>
@@ -310,7 +329,7 @@ const formatDate = (date: string): string => {
   }
 }
 
-.center {
+/* .center {
   width: 2px;
   height: 16px;
   position: absolute;
@@ -318,7 +337,7 @@ const formatDate = (date: string): string => {
   transform: translateX(-50%);
   top: 0;
   background: red;
-}
+} */
 
 .item-text {
   font-size: 4px;
