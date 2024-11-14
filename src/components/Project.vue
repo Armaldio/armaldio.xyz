@@ -1,160 +1,112 @@
 <template>
-  <div class="card card-container">
-    <div class="top">
-      <div class="middle">
-        <img class="centered-image" width="120" height="auto" :src="project.image" alt="">
-        <div class="centered card-title">
-          <div class="headline pb-2">{{ project.title }}</div>
-        </div>
-        <div class="card-text text-center">
-          <span v-html="toHTML(project.description)"/>
-        </div>
-        <div class="py-3" v-if="(stars > -1 || watchers > -1 || forks > -1) &&
-                 !$vuetify.breakpoint.xsOnly">
-          <v-layout align-center justify-center>
-            <v-flex xs3>
-              <template v-if="stars > -1">
-                <v-icon small class="mr-2" right>fas fa-star</v-icon>
-                <span slot="badge">{{ stars }}</span>
-              </template>
-            </v-flex>
-            <v-flex xs3>
-              <template v-if="watchers > -1">
-                <v-icon small class="mr-2" right>fas fa-eye</v-icon>
-                <span slot="badge">{{ watchers }}</span>
-              </template>
-            </v-flex>
-            <v-flex xs3>
-              <template v-if="forks > -1">
-                <v-icon small class="mr-2" right>fas fa-code-branch</v-icon>
-                <span slot="badge">{{ forks }}</span>
-              </template>
-            </v-flex>
-          </v-layout>
-        </div>
-        <component class="pt-3" v-if="project.customComponent"
-                   v-bind:is="project.customComponent">
-        </component>
+  <div class="project">
+    <div class="project-card" :class="{ active }">
+      <div class="title-wrapper">
+        <icon v-if="!$slots.icon" class="icon"></icon>
+        <slot v-else name="icon" class="icon"></slot>
+
+        <div class="title">{{ title }}</div>
       </div>
-    </div>
-    <div class="card-actions">
-      <v-layout row wrap>
-        <v-flex xs12 class="text-center">
-          <v-btn
-            depressed
-            class="view-button"
-            :style="{ 'background-color': project.color }"
-            :href="project.link"
-            target="_blank">
-            Open
-            <!--<v-icon small right>far fa-eye</v-icon>-->
-          </v-btn>
-        </v-flex>
-      </v-layout>
+      <div class="description">{{ description }}</div>
+      <a :href="link" target="_blank" class="link">Voir le projet</a>
     </div>
   </div>
 </template>
 
-<script>
-// import axios from 'axios';
-import snarkdown from 'snarkdown';
+<script lang="ts" setup>
+import type { DefineComponent } from 'vue'
 
-export default {
-  name: 'Project',
-  data() {
-    return {
-      stars: -1,
-      watchers: -1,
-      forks: -1,
-    };
-  },
-  props: {
-    project: {
-      type: Object,
-      required: true,
-    },
-  },
-  methods: {
-    toHTML(md) {
-      return snarkdown(md);
-    },
-  },
-  async mounted() {
-    // if (this.project.link.startsWith('https://github.com/')) {
-    //   const regex = /https:\/\/github.com\/(.*?)\/(.*?)$/gm;
-    //   const match = regex.exec(this.project.link);
-    //
-    //   if (match && match.length === 3) {
-    //     const githubInfos = await axios.get(`https://api.github.com/repos/${match[1]}/${match[2]}`);
-    //     this.stars = githubInfos.data.stargazers_count;
-    //     this.watchers = githubInfos.data.watchers_count;
-    //     this.forks = githubInfos.data.forks;
-    //   }
-    // }
-  },
-};
+const props = defineProps<{
+  icon: DefineComponent
+  description: string
+  title: string
+  link: string
+  active: boolean
+}>()
 </script>
 
 <style scoped>
-  .title {
-    font-size: 23px;
-  }
+.icon {
+  font-size: 2rem;
+  height: 48px;
+}
 
-  .card-title {
-    padding: 5px 10px;
-  }
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex: 1 1 auto;
+}
 
-  .card-text {
-    width: 90%;
-    margin: 0 auto;
-  }
+.description {
+  font-size: 1.2rem;
+  flex: 1 1 auto;
+}
 
-  .centered-image {
-    display: block;
-    margin: 0 auto;
-    padding: 15px;
-  }
+.link {
+  font-size: 1.2rem;
+  color: var(--main-text-color);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  background-color: var(--main-bg-color);
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  color: white;
+}
 
-  .centered div {
-    text-align: center;
-    width: 100%;
-  }
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  padding: 1rem;
+  border-radius: var(--border-radius);
 
-  .card-container {
-    height: 350px;
-    background-color: #404040;
-  }
-
-  .card-actions {
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    /*background-color: #626262;*/
-  }
-
-  .top {
-    top: 0;
-    position: absolute;
-    width: 100%;
-    height: 290px;
-
-    display: flex; /* contexte sur le parent */
-    flex-direction: column; /* direction d'affichage verticale */
+  .project-card {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    /*background-color: #626262;*/
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    padding: 1rem;
+    border-radius: var(--border-radius);;
+    height: 100%;
+
+    /* &.active {
+      transform: scale(1.05);
+    } */
   }
 
-  .is-selected {
+  &:hover {
+    /* background-color: var(--btn-hover-color); */
+    box-shadow: var(--btn-hover-box-shadow);
+    transform: var(--btn-hover-transform);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
 
+.title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .title-wrapper {
+    .title {
+      font-size: 1.2rem;
+    }
   }
 
-  .view-button {
-    /*margin-bottom: 25px;*/
-    margin: 10px;
+  .description {
+    font-size: 1rem;
   }
-
-  .breaked {
-    overflow-wrap: break-word;
-  }
+}
 </style>
