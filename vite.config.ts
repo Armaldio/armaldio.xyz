@@ -7,6 +7,9 @@ import Icons from 'unplugin-icons/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    port: 3131,
+  },
   plugins: [
     vue(),
     vueDevTools(),

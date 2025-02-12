@@ -1,0 +1,59 @@
+Privacy Policy for DubbingBase
+
+Effective Date: 12/02/2025
+
+1. Introduction
+Welcome to DubbingBase, provided by Armaldio XYZ ("we," "our," or "us"). This Privacy Policy explains how we collect, use, and protect your personal data when you use our services. It is publicly accessible and available within the app.
+
+2. Who We Are
+DubbingBase is developed and maintained by Armaldio XYZ. For any privacy-related inquiries, please contact us using the details below.
+
+3. Data We Collect
+We collect the following personal data when you register for an account on DubbingBase:
+
+Email address: Used for account creation and authentication.
+
+Password: Securely stored for authentication purposes.
+
+Note: We do not access, collect, or share additional personal or sensitive user data beyond what is listed above.
+
+4. How We Use Your Data
+Your data is used solely for:
+
+User authentication and account management.
+
+Enhancing user experience through secure login sessions.
+
+We do not use your data for marketing or share it with third parties beyond what is necessary for authentication.
+
+5. Data Sharing and Third-Party Disclosure
+Your login data is managed and stored securely by Supabase, a third-party authentication provider. We do not have direct access to your password. Supabase employs industry-standard security measures to protect your information.
+
+6. Secure Data Handling Procedures
+To ensure your data is protected, we implement the following measures:
+
+Secure data transmission using encryption (TLS/SSL).
+
+Supabase's encrypted storage (data encryption at rest and in transit).
+
+Strict access controls to prevent unauthorized access.
+
+7. Data Retention and Deletion Policy
+We retain your personal data as long as your account remains active. If you request deletion, we will remove your account and associated data within a reasonable timeframe. Some archived data may be securely retained to comply with legal or operational requirements.
+
+8. Your Rights and Contact Information
+As a user, you have the right to:
+
+Request access to your personal data.
+
+Request correction or deletion of your data.
+
+Withdraw consent for data processing.
+
+To exercise your rights, contact us at contact@armaldio.xyz.
+
+9. Changes to This Privacy Policy
+We may update this Privacy Policy periodically. Any changes will be posted on this page, and we encourage you to review it regularly.
+
+10. Accessibility and Non-Modifiability
+This Privacy Policy is permanently accessible at https://armaldio.xyz/dubbing-base/privacy-policy.txt and within the DubbingBase app's settings menu. The policy is published as a static, non-modifiable document on our website to ensure transparency and compliance. Users can access this policy at any time through both the Google Play Store listing and the app itself.
