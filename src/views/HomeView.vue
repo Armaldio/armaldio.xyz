@@ -120,9 +120,7 @@
                 link="https://pipelab.app"
               >
                 <template #icon>
-                  <img
-                    src="https://avatars.githubusercontent.com/u/176024061?s=48&v=4"
-                  />
+                  <img src="https://avatars.githubusercontent.com/u/176024061?s=48&v=4" />
                 </template>
               </Project>
 
@@ -455,7 +453,7 @@ onMounted(() => {
   --main-bg-color: #0e8a91;
   --main-text-color: #000;
 
-  --btn-hover-color: #0011ff38;
+  --btn-hover-color: #f0f0f0;
   --btn-hover-box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 1);
   --btn-hover-transform: translateY(-0.25em);
 
@@ -674,7 +672,6 @@ onMounted(() => {
 
   &:hover {
     background-color: var(--btn-hover-color);
-    box-shadow: var(--btn-hover-box-shadow);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     text-decoration: none;
@@ -693,18 +690,23 @@ onMounted(() => {
   0% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(10deg);
   }
+
   50% {
     transform: rotate(-10deg);
   }
+
   75% {
     transform: rotate(5deg);
   }
+
   95% {
     transform: rotate(-5deg);
   }
+
   100% {
     transform: rotate(0deg);
   }

@@ -1,14 +1,28 @@
 <template>
   <div class="project">
-    <div class="project-card" :class="{ active }">
+    <div
+      class="project-card"
+      :class="{ active }"
+    >
       <div class="title-wrapper">
-        <icon v-if="!$slots.icon" class="icon"></icon>
-        <slot v-else name="icon" class="icon"></slot>
+        <icon
+          v-if="!$slots.icon"
+          class="icon"
+        ></icon>
+        <slot
+          v-else
+          name="icon"
+          class="icon"
+        ></slot>
 
         <div class="title">{{ title }}</div>
       </div>
       <div class="description">{{ description }}</div>
-      <a :href="link" target="_blank" class="link">Voir le projet</a>
+      <a
+        :href="link"
+        target="_blank"
+        class="link"
+      >Voir le projet</a>
     </div>
   </div>
 </template>
@@ -48,7 +62,7 @@ const props = defineProps<{
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   background-color: var(--main-bg-color);
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: var(--border-radius);
   color: white;
 }
@@ -72,7 +86,8 @@ const props = defineProps<{
     transition: all 0.2s ease-in-out;
     position: relative;
     padding: 1rem;
-    border-radius: var(--border-radius);;
+    border-radius: var(--border-radius);
+    ;
     height: 100%;
 
     /* &.active {
