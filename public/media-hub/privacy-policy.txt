@@ -17,14 +17,12 @@ We do not use any data.
 We do not use your data for marketing or share it with third parties.
 
 5. Data Sharing and Third-Party Disclosure
-Your login data is managed and stored securely by Supabase, a third-party authentication provider. We do not have direct access to your password. Supabase employs industry-standard security measures to protect your information.
+We do not share any data.
 
 6. Secure Data Handling Procedures
 To ensure your data is protected, we implement the following measures:
 
 Secure data transmission using encryption (TLS/SSL).
-
-Supabase's encrypted storage (data encryption at rest and in transit).
 
 Strict access controls to prevent unauthorized access.
 
