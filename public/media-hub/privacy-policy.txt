@@ -1,0 +1,45 @@
+Privacy Policy for MediaHub
+
+Effective Date: 30/06/2025
+
+1. Introduction
+Welcome to MediaHub, provided by Armaldio XYZ ("we," "our," or "us"). This Privacy Policy explains how we collect, use, and protect your personal data when you use our services. It is publicly accessible and available within the app.
+
+2. Who We Are
+MediaHub is developed and maintained by Armaldio XYZ. For any privacy-related inquiries, please contact us using the details below.
+
+3. Data We Collect
+We do not collect any personal data.
+
+4. How We Use Your Data
+We do not use any data.
+
+We do not use your data for marketing or share it with third parties.
+
+5. Data Sharing and Third-Party Disclosure
+Your login data is managed and stored securely by Supabase, a third-party authentication provider. We do not have direct access to your password. Supabase employs industry-standard security measures to protect your information.
+
+6. Secure Data Handling Procedures
+To ensure your data is protected, we implement the following measures:
+
+Secure data transmission using encryption (TLS/SSL).
+
+Supabase's encrypted storage (data encryption at rest and in transit).
+
+Strict access controls to prevent unauthorized access.
+
+7. Data Retention and Deletion Policy
+We do not retain any data.
+
+8. Your Rights and Contact Information
+As a user, you have the right to:
+
+Withdraw consent for data processing.
+
+To exercise your rights, contact us at contact@armaldio.xyz.
+
+9. Changes to This Privacy Policy
+We may update this Privacy Policy periodically. Any changes will be posted on this page, and we encourage you to review it regularly.
+
+10. Accessibility and Non-Modifiability
+This Privacy Policy is permanently accessible at https://armaldio.xyz/media-hub/privacy-policy.txt and within the MediaHub app's settings menu. The policy is published as a static, non-modifiable document on our website to ensure transparency and compliance. Users can access this policy at any time through both the Google Play Store listing and the app itself.
